@@ -579,10 +579,20 @@ body {
   cursor: pointer;
 }
 
+/* 
 .form__file {
   position: absolute;
   width: 0px;
   height: 0px;
+} */
+
+input[type='file'] {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .custom-input {
